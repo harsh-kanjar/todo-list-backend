@@ -12,7 +12,7 @@ const port = 5000;
 app.use(cors({
   origin: 'http://localhost:5173', // Allow specific origin
   methods: ['GET', 'POST', 'PUT', 'DELETE'], // Specify allowed methods
-  allowedHeaders: ['Content-Type', 'Authorization'] // Specify allowed headers
+  allowedHeaders: ['Content-Type', 'auth-token'] // Specify allowed headers
 }));
 
 
