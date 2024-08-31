@@ -19,6 +19,9 @@ app.use(express.json())
 //---------------AVAILABLE ROUTES--------------
 app.use('/api/auth', require('./routes/auth.js'));
 app.use('/api/todos', require('./routes/todos.js'));
+app.use('/', (req,res) => {
+  res.json({message:'Express backend'})
+});
 // -------------------------------------------------
 
 app.listen(port, () => {
